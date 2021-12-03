@@ -1,9 +1,9 @@
 import { Meta, Canvas, Story, ArgsTable } from "@storybook/addon-docs";
 
-import SummaryTable from ".";
+import SummaryCard from ".";
 
 <Meta
-  title="Components/SummaryTable"
+  title="Components/SummaryCard"
   parameters={{
     viewport: {
       defaultViewport: "mobile1",
@@ -19,16 +19,16 @@ export const tableArgs = {
   total: "€95.00"
 };
 
-## SummaryTable
+## SummaryCard
 
-SummaryTable displays order details in a table, each row has information on name and price for each item.
+SummaryCard displays order details in a table, each row has information on name and price for each item.
 
 <Canvas>
   <Story name="Default" args={tableArgs}>
-    {(args) => <SummaryTable {...args} />}
+    {(args) => <SummaryCard {...args} />}
   </Story>
 </Canvas>
 
 ## Props
 
-<ArgsTable of={SummaryTable} />
+<ArgsTable of={SummaryCard} />
